@@ -1,0 +1,193 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "ma pote",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "how are you",
+                        "say hi world",
+                        "say hi",
+                        "hi",
+                        "say hello world",
+                        "say hello"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PartiesIntent",
+                    "slots": [
+                        {
+                            "name": "partie",
+                            "type": "parties"
+                        }
+                    ],
+                    "samples": [
+                        "tes {partie} sont toujours sur la pointe des pieds",
+                        "tes {partie} sont toujours souriant",
+                        "pourquoi tes {partie} sont toujours tendus",
+                        "pourquoi tes {partie} sont toujours droit",
+                        "pourquoi tes {partie} sont toujours bien coiffe"
+                    ]
+                },
+                {
+                    "name": "NeedIntent",
+                    "slots": [
+                        {
+                            "name": "besoin",
+                            "type": "besoin"
+                        }
+                    ],
+                    "samples": [
+                        "je n'ai pas besoin de {besoin}",
+                        "tu ne {besoin} pas",
+                        "tu n'as pas besoin de {besoin}"
+                    ]
+                },
+                {
+                    "name": "FriendIntent",
+                    "slots": [
+                        {
+                            "name": "pote",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "je suis comme  {pote} ",
+                        "je suis comme  {pote}  et {pote}",
+                        "je suis comme  {pote} {pote}  et {pote}",
+                        "je suis comme  {pote} {pote} {pote} et {pote}"
+                    ]
+                },
+                {
+                    "name": "PartyIntent",
+                    "slots": [
+                        {
+                            "name": "party",
+                            "type": "party"
+                        }
+                    ],
+                    "samples": [
+                        "je veux {party}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "parties",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "oreilles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nez"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yeux"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bouche"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "main"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bras"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jambes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pieds"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheveux"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "besoin",
+                    "values": [
+                        {
+                            "id": "se_doucher",
+                            "name": {
+                                "value": "se doucher"
+                            }
+                        },
+                        {
+                            "id": "manger",
+                            "name": {
+                                "value": "manger"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "party",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "rigoler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "s'amuser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sortir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "faire la fête"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
