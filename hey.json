@@ -13,7 +13,11 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": []
+                    "samples": [
+                        "au revoir",
+                        "bye",
+                        "bye bye"
+                    ]
                 },
                 {
                     "name": "AMAZON.NavigateHomeIntent",
@@ -45,6 +49,8 @@
                         }
                     ],
                     "samples": [
+                        "pourquoi tu as toujours les {partie} droit",
+                        "pourquoi tu as toujours les {partie} coiffé",
                         "tes {partie} sont toujours sur la pointe des pieds",
                         "tes {partie} sont toujours souriant",
                         "pourquoi tes {partie} sont toujours tendus",
@@ -70,15 +76,27 @@
                     "name": "FriendIntent",
                     "slots": [
                         {
-                            "name": "pote",
+                            "name": "potea",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "poteb",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "potec",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "poted",
                             "type": "AMAZON.FirstName"
                         }
                     ],
                     "samples": [
-                        "je suis comme  {pote} ",
-                        "je suis comme  {pote}  et {pote}",
-                        "je suis comme  {pote} {pote}  et {pote}",
-                        "je suis comme  {pote} {pote} {pote} et {pote}"
+                        "je suis comme  {potea} ",
+                        "je suis comme  {potea}  et {poteb}",
+                        "je suis comme  {potea} {poteb}  et {potec}",
+                        "je suis comme  {potea} {poteb} {potec} et {poted}"
                     ]
                 },
                 {
@@ -91,6 +109,39 @@
                     ],
                     "samples": [
                         "je veux {party}"
+                    ]
+                },
+                {
+                    "name": "SadIntent",
+                    "slots": [],
+                    "samples": [
+                        "tu as envie de pleurer",
+                        "tu pleures",
+                        "tu es triste",
+                        "tu veux pleurer "
+                    ]
+                },
+                {
+                    "name": "PrettyIntent",
+                    "slots": [],
+                    "samples": [
+                        "tu es belle",
+                        "tu es cool"
+                    ]
+                },
+                {
+                    "name": "CityIntent",
+                    "slots": [
+                        {
+                            "name": "ville",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "tu aimes {ville}",
+                        "tu es à {ville}",
+                        "tu habites à {ville}",
+                        "tu connais  {ville}"
                     ]
                 }
             ],
